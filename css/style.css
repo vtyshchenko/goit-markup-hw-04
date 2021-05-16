@@ -61,6 +61,7 @@ body {
 .logo-part-blue {
   color: var(--accent-color);
 }
+
 .container {
   width: 1200px;
   padding-right: 15px;
@@ -74,6 +75,27 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+/* body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9fd;
+}
+
+.facebook-icon {
+  display: inline-flex;
+  width: 240px;
+  height: 240px;
+  border: 2px dashed #2a2a2a;
+  border-radius: 8px;
+  background-image: url("https://res.cloudinary.com/goit-academy/image/upload/v1614773221/codepen/cat_segyum.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+} */
 
 /* ################### HEADER ################### */
 
@@ -125,6 +147,8 @@ body {
 
 .address-link {
   color: var(--main-text-color);
+  display: inline-flex;
+  align-items: center;
 }
 
 .site-nav .current,
@@ -132,18 +156,30 @@ body {
 .menu-link:focus {
   color: var(--accent-color);
 }
+
 .menu .menu-item + .menu-item {
   margin-left: 50px;
 }
 
 .mail-and-tel {
   display: flex;
-  /* margin: 0 0 0 auto; */
   padding: 0;
 }
 
 .mail-and-tel .mt-item + .mt-item {
   margin-left: 50px;
+}
+
+.address-link::before {
+  /* flex-wrap: nowrap; */
+
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  content: "";
+  margin-right: 10px;
+  /* background-image: svg("./images/header/envelope.svg"); */
+  background-size: contain;
 }
 
 /* ################### END HEADER ################### */
@@ -295,6 +331,7 @@ body {
   margin: 0 0 50px 0;
   width: 100%;
 }
+
 .work-list {
   display: flex;
   /* justify-content: space-between; */
@@ -379,6 +416,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .filters-list {
   display: flex;
   justify-content: center;
