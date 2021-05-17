@@ -52,6 +52,7 @@ img {
 body {
   font-family: Roboto, sans-serif;
   color: var(--main-text-color);
+  background-color: #e5e5e5;
 }
 
 .link {
@@ -170,17 +171,31 @@ body {
   margin-left: 50px;
 }
 
-.address-link::before {
-  /* flex-wrap: nowrap; */
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.tel-icon {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+/* .address-link::before {
+   flex-wrap: nowrap; 
 
   width: 20px;
   height: 20px;
-  background-color: red;
+   background-color: red; 
   content: "";
   margin-right: 10px;
-  /* background-image: svg("./images/header/envelope.svg"); */
+  background-image: svg("./images/header/envelope.svg");
   background-size: contain;
-}
+} */
 
 /* ################### END HEADER ################### */
 
@@ -233,7 +248,15 @@ body {
 /* ################### HERO ################### */
 
 .hero {
-  background-color: #2f303a;
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero_bg.jpg);
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  background-position: center;
   color: #ffffff;
   text-align: center;
   padding-top: 200px;
@@ -276,11 +299,11 @@ body {
 /* ################### END HERO ################### */
 
 /* ################### SPECIFICS ################### */
-.specifics {
-  padding-top: 99px;
-  padding-bottom: 47px;
-  /* background-color: darkseagreen; */
-}
+/* .specifics { */
+/* padding-top: 99px; */
+/* padding-bottom: 47px; */
+/* background-color: darkseagreen; */
+/* } */
 
 .specifics-list {
   display: flex;
@@ -300,6 +323,20 @@ body {
   margin-right: var(--margin-30);
 }
 
+.specifics-icon-allign {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.specifics-icon {
+  width: 70px;
+  height: 70px;
+  fill: currentColor;
+}
+
 .specifics-item-title {
   font-size: 14px;
   font-weight: 700;
@@ -315,11 +352,11 @@ body {
 /* ################### END SPECIFICS ################### */
 
 /* ################### WORK ################### */
-.work {
-  padding-top: 47px;
-  padding-bottom: 94px;
-  /* background-color: khaki; */
-}
+/* .work { */
+/* padding-top: 47px; */
+/* padding-bottom: 94px; */
+/* background-color: khaki; */
+/* } */
 
 .work-title {
   font-size: 36px;
@@ -407,6 +444,71 @@ body {
 }
 
 /* ################### END TEAM ################### */
+
+/* ################### CLIENTS ################### */
+/* .clients {
+  background-color: #e5e5e5;
+} */
+
+.clients-title {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--secondary-text-color);
+  margin: 0 0 50px 0;
+  width: 100%;
+}
+
+.clients-list {
+  /* background-color: #00ffff; */
+  display: flex;
+  flex-wrap: no-wrap;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  margin-right: calc(-1 * var(--margin-30));
+  margin-bottom: calc(-1 * var(--margin-30));
+}
+
+.icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.clients-item {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+
+  width: calc((100% - 6 * var(--margin-30)) / 6);
+  padding: 16px 32px;
+  /* border: 1px solid #afb1b8; */
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  color: #afb1b8;
+
+  margin-right: var(--margin-30);
+  margin-bottom: var(--margin-30);
+}
+
+.clients-item-link {
+  width: 100%;
+  color: currentColor;
+}
+
+.clients-item:focus,
+.clients-item:hover {
+  color: #188ce8;
+}
+
+/* ################### END CLIENTS ################### */
 /* **************** END INDEX HTML **************** */
 
 /* **************** PORTFOLIO HTML **************** */
