@@ -84,27 +84,6 @@ body {
   height: 20px;
   fill: currentColor;
 }
-/* body {
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f9f9fd;
-}
-
-.facebook-icon {
-  display: inline-flex;
-  width: 240px;
-  height: 240px;
-  border: 2px dashed #2a2a2a;
-  border-radius: 8px;
-  background-image: url("https://res.cloudinary.com/goit-academy/image/upload/v1614773221/codepen/cat_segyum.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-} */
-
 /* ################### HEADER ################### */
 
 .header {
@@ -154,8 +133,8 @@ body {
 }
 
 .address-link {
-  color: var(--main-text-color);
   display: inline-flex;
+  color: var(--main-text-color);
   align-items: center;
 }
 
@@ -179,30 +158,18 @@ body {
 }
 
 .mail-icon {
+  fill: currentColor;
   width: 16px;
   height: 12px;
-  fill: currentColor;
   margin-right: 10px;
 }
 
 .tel-icon {
+  fill: currentColor;
   width: 10px;
   height: 16px;
-  fill: currentColor;
   margin-right: 10px;
 }
-
-/* .address-link::before {
-   flex-wrap: nowrap; 
-
-  width: 20px;
-  height: 20px;
-   background-color: red; 
-  content: "";
-  margin-right: 10px;
-  background-image: svg("./images/header/envelope.svg");
-  background-size: contain;
-} */
 
 /* ################### END HEADER ################### */
 
@@ -301,7 +268,6 @@ body {
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero_bg.jpg);
-  background-size: auto auto;
   background-repeat: no-repeat;
   background-position: center;
   color: var(--color-white);
@@ -344,12 +310,6 @@ body {
 /* ################### END HERO ################### */
 
 /* ################### SPECIFICS ################### */
-/* .specifics { */
-/* padding-top: 99px; */
-/* padding-bottom: 47px; */
-/* background-color: darkseagreen; */
-/* } */
-
 .specifics-list {
   display: flex;
   padding-left: 0;
@@ -396,12 +356,6 @@ body {
 /* ################### END SPECIFICS ################### */
 
 /* ################### WORK ################### */
-/* .work { */
-/* padding-top: 47px; */
-/* padding-bottom: 94px; */
-/* background-color: khaki; */
-/* } */
-
 .work-title {
   font-size: 36px;
   font-weight: 700;
@@ -409,8 +363,8 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--secondary-text-color);
-  margin: 0 0 50px 0;
   width: 100%;
+  margin: 0 0 50px 0;
 }
 
 .work-list {
@@ -442,14 +396,13 @@ body {
   line-height: 1.17;
   text-align: center;
   color: var(--secondary-text-color);
-  margin: 0 0 50px 0;
   width: 100%;
+  margin: 0 0 50px 0;
 }
 
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -459,11 +412,11 @@ body {
 }
 
 .team-item {
-  text-align: center;
-  background-color: var(--color-white);
   font-size: 16px;
   letter-spacing: 0.03em;
   line-height: 1.19;
+  text-align: center;
+  background-color: var(--color-white);
 
   width: calc((100% - 4 * var(--margin-30)) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -500,9 +453,9 @@ body {
 
 .team-contact-list-item-link {
   display: block;
+  color: var(--color-social-link);
   width: 44px;
   height: 44px;
-  color: var(--color-social-link);
   border-radius: 50%;
   padding: 10px;
 }
@@ -522,13 +475,12 @@ body {
   line-height: 1.17;
   text-align: center;
   color: var(--secondary-text-color);
-  margin: 0 0 50px 0;
   width: 100%;
+  margin: 0 0 50px 0;
 }
 
 .clients-list {
   display: flex;
-  flex-wrap: no-wrap;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -544,26 +496,27 @@ body {
   font-size: 16px;
   letter-spacing: 0.03em;
   line-height: 1.19;
+  color: var(--color-social-link);
 
   width: calc((100% - 6 * var(--margin-30)) / 6);
   padding: 16px 32px;
   border: 1px solid currentColor;
   border-radius: 4px;
-  color: var(--color-social-link);
 
   margin-right: var(--margin-30);
   margin-bottom: var(--margin-30);
 }
 
 .icon {
+  fill: currentColor;
   width: 106px;
   height: 60px;
-  fill: currentColor;
 }
 
 .clients-item-link {
-  width: 100%;
+  display: block;
   color: currentColor;
+  width: 100%;
 }
 
 .clients-item:focus,
@@ -598,17 +551,17 @@ body {
 
 .filters-list-item-button {
   display: block;
-  text-align: center;
   flex-wrap: wrap;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.03em;
   line-height: 1.63;
-  padding: 6px 22px;
+  text-align: center;
   background-color: var(--portfolio-filters-background);
   color: var(--secondary-text-color);
   border: none;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .filters-list-item-button:focus,
