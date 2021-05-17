@@ -303,7 +303,7 @@ body {
 
 .hero-button:focus,
 .hero-button:hover {
-  background-color: var(--accent-color);
+  background-color: #188ce8;
   cursor: pointer;
 }
 
