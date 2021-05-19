@@ -56,7 +56,6 @@ img {
 body {
   font-family: Roboto, sans-serif;
   color: var(--main-text-color);
-  background-color: var(--main-studio-background);
 }
 
 .link {
