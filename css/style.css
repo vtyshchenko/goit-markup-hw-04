@@ -238,19 +238,19 @@ body {
 
 .footer-contact-list {
   display: flex;
-}
 
-.footer-contact-list-item {
-  margin-right: 10px;
+  align-items: baseline;
 }
 
 .footer-contact-list-item-link {
-  display: block;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   background: rgba(255, 255, 255, 0.1);
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  padding: 10px;
+  margin-right: 10px;
   color: var(--color-white);
 }
 
@@ -274,8 +274,12 @@ body {
   background-position: center;
   color: var(--color-white);
   text-align: center;
+  width: 1600px;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-size: cover;
+  margin: 0 auto 0 auto;
 }
 
 .hero-title {
@@ -297,6 +301,7 @@ body {
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--color-white);
+  border: none;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -330,10 +335,12 @@ body {
 }
 
 .specifics-icon-allign {
+  display: flex;
   background-color: #f5f4fa;
   border-radius: 4px;
-  padding: 25px 100px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
   margin-bottom: 30px;
 }
 
@@ -440,26 +447,27 @@ body {
 
   margin: 0 0 10px 0;
 }
+
 .team-item-profession {
   margin-bottom: 10px;
 }
 
 .team-contact-list {
   display: flex;
-}
+  align-items: center;
 
-.team-contact-list-item {
-  margin-right: 10px;
-  color: var(--main-text-color);
+  margin-right: -10px;
 }
 
 .team-contact-list-item-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--color-social-link);
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  padding: 10px;
+  margin-right: 10px;
 }
 
 .team-contact-list-item-link:focus,
@@ -515,12 +523,14 @@ body {
 }
 
 .clients-item-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: currentColor;
   border: 1px solid currentColor;
   border-radius: 4px;
   width: 100%;
-  padding: 16px 32px;
+  height: 92px;
 }
 
 .clients-item-link:focus,
@@ -604,10 +614,14 @@ body {
   margin-bottom: var(--margin-30);
 }
 
+.cards-list-item-link:focus,
+.cards-list-item-link:active,
+.cards-list-item-link:hover,
 .cards-list-item:focus,
+.cards-list-item:active,
 .cards-list-item:hover {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.08),
+    1px 4px 6px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
