@@ -218,10 +218,11 @@ body {
 
 .footer-list {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-social-list {
-  margin: 13px 0 19px 70px;
+  margin: 0 0 19px 70px;
 }
 
 .footer-social-title {
@@ -237,7 +238,6 @@ body {
 
 .footer-contact-list {
   display: flex;
-
   align-items: baseline;
   /* margin-right: -10px; */
 }
@@ -324,6 +324,12 @@ body {
 /* ################### END HERO ################### */
 
 /* ################### SPECIFICS ################### */
+.specifics {
+  padding-top: 99px;
+  padding-bottom: 47px;
+  /* background-color: darkseagreen; */
+}
+
 .specifics-list {
   display: flex;
   padding-left: 0;
@@ -372,6 +378,12 @@ body {
 /* ################### END SPECIFICS ################### */
 
 /* ################### WORK ################### */
+.work {
+  padding-top: 47px;
+  padding-bottom: 94px;
+  /* background-color: khaki; */
+}
+
 .work-title {
   font-size: 36px;
   font-weight: 700;
