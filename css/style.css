@@ -460,7 +460,7 @@ body {
 .team-contact-list {
   display: flex;
   align-items: center;
-  margin-right: -10px;
+  /* margin-right: -10px; */
 }
 
 .team-contact-list-item:not(:last-child) {
